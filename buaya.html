@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Love Proposal</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .image-container {
+            margin: 20px;
+        }
+        .button-container {
+            margin: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function moveButton() {
+            var x = Math.floor(Math.random() * window.innerWidth);
+            var y = Math.floor(Math.random() * window.innerHeight);
+            var btn = document.getElementById('gamau');
+            btn.style.position = 'absolute';
+            btn.style.left = x + 'px';
+            btn.style.top = y + 'px';
+        }
+        function openNewPage() {
+            var newWindow = window.open("", "_blank");
+            newWindow.document.write("<h1>Asikkk punya pacarrrr</h1>");
+        }
+    </script>
+</head>
+<body>
+    <h1>HAI CANTIK KU</h1>
+    <div class="image-container">
+        <img src="bearuv.jpg" alt="Bear Image">
+    </div>
+    <h2>Maukah kamu menjadi pacarku?</h2>
+    <div class="button-container">
+        <button onclick="openNewPage()">MAU</button>
+        <button id="gamau" onmouseover="moveButton()">GAMAU</button>
+          <a href="asik.html"><button type="submit">MAU</button></a>
+    </div>
+</body>
+</html>
